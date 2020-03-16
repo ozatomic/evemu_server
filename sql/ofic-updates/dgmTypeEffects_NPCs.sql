@@ -3,7 +3,7 @@
 -- Dumping data for table `dgmTypeEffects`
 --
 
-INSERT INTO `dgmTypeEffects` (`typeID`, `effectID`, `isDefault`) VALUES
+INSERT IGNORE INTO `dgmTypeEffects` (`typeID`, `effectID`, `isDefault`) VALUES
 (1372, 10, 1),
 (2370, 10, 1),
 (2370, 2195, 0),
@@ -3371,7 +3371,7 @@ INSERT INTO `dgmTypeEffects` (`typeID`, `effectID`, `isDefault`) VALUES
 (20465, 569, 0),
 (20465, 876, 0),
 (20466, 10, 1);
-INSERT INTO `dgmTypeEffects` (`typeID`, `effectID`, `isDefault`) VALUES
+INSERT IGNORE INTO `dgmTypeEffects` (`typeID`, `effectID`, `isDefault`) VALUES
 (20466, 876, 0),
 (20467, 10, 1),
 (20467, 569, 0),
@@ -6710,7 +6710,7 @@ INSERT INTO `dgmTypeEffects` (`typeID`, `effectID`, `isDefault`) VALUES
 (25809, 575, 0),
 (25809, 878, 0),
 (25814, 10, 1);
-INSERT INTO `dgmTypeEffects` (`typeID`, `effectID`, `isDefault`) VALUES
+INSERT IGNORE INTO `dgmTypeEffects` (`typeID`, `effectID`, `isDefault`) VALUES
 (25814, 569, 0),
 (25814, 2194, 0),
 (25815, 2662, 1),

@@ -28,7 +28,7 @@ CREATE TABLE `account` (
   `online` tinyint(1) NOT NULL DEFAULT '0',
   `banned` tinyint(1) NOT NULL DEFAULT '0',
   `logonCount` int(10) unsigned NOT NULL DEFAULT '0',
-  `lastLogin` timestamp NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `lastLogin` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`accountID`),
   UNIQUE KEY `accountName` (`accountName`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
@@ -804,7 +804,7 @@ CREATE TABLE `chrSkillQueue` (
 	`orderIndex` INT(10) UNSIGNED NOT NULL,
 	`typeID` INT(10) UNSIGNED NOT NULL,
 	`level` INT(10) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Mail subsystem
 DROP TABLE IF EXISTS `mailLabel`;
